@@ -66,7 +66,7 @@ mkdir build && cd build
 CMAKE_FLAGS="-DLLVM_TARGETS_TO_BUILD:STRING=host"
 CMAKE_FLAGS="${CMAKE_FLAGS} -DCMAKE_CXX_FLAGS=-std=c++0x"
 cmake .. ${CMAKE_FLAGS}
-make -j${nproc} llvm-tblgen clang-tblgen llvm-config
+make -j14 llvm-tblgen clang-tblgen llvm-config
 
 # Copy the tblgens and llvm-config into our destination `bin` folder:
 mkdir -p $prefix/bin
