@@ -52,5 +52,5 @@ deploy:
   file: products/*
   skip_cleanup: true
   on:
-    repo: staticfloat/LLVMBuilder
+    repo: DokFaust/LLVMBuilder
     tags: true
