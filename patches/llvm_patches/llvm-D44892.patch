@@ -7,7 +7,7 @@ Index: CMakeLists.txt
  endif( LLVM_USE_OPROFILE )
  
 +option(LLVM_USE_PERF
-+  "Use perf JIT interface to inform perf about JIT code" OFF)
++  "Use perf JIT interface to inform perf about JIT code" ON)
 +
 +# If enabled, verify we are on a platform that supports perf.
 +if( LLVM_USE_PERF )
